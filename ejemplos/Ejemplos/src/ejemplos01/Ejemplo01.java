@@ -16,25 +16,46 @@ public class Ejemplo01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        
-        String miCiudad = obtenerCiudadMayuscula("Loja");
-        System.out.printf("%s\n", miCiudad);
+
+        //String miCiudad = obtenerCiudadMayuscula("Loja");
+        //System.out.printf("%s\n", miCiudad);
+        obtenerMultiplicacion(7,50);
+       String miMensaje =obtenerMultiplicaciondos(7,50);
+        System.out.printf("%s\n",miMensaje);
     }
-    
-    
-    public String obtenerCiudadMayuscula(String m){
+// se creo un nuevo metodo  y de ahi se hizo la tabla para poder sacarla
+    public static String obtenerCiudadMayuscula(String m) {
         String m2 = m.toUpperCase();
         return m2;
     }
-    
-    public static void obtenerMultiplicacion(int tabla, int limite){
-        
+    //aquial final se puso un return para que pueda de volver una cadena 
+     public static String obtenerMultiplicaciondos(int tabla, int limite) {
+        int multiplicacion = 0 ;
+        String cadenaFinal = "";
+        for (int i = 0; i < limite; i++) {
+            multiplicacion = tabla * i;
+            cadenaFinal = String.format("%s%d * %d = %d\n",
+                     cadenaFinal, tabla, i,
+                    multiplicacion);
+        }
+        return cadenaFinal;
+  }
+
+
+    public static void obtenerMultiplicacion(int tabla, int limite) {
+        int multiplicacion = 0 ;
+        String cadenaFinal = "";
+        for (int i = 0; i < limite; i++) {
+            multiplicacion = tabla * i;
+            cadenaFinal = String.format("%s%d * %d = %d\n",
+                     cadenaFinal, tabla, i,
+                    multiplicacion);
+        }
+        System.out.printf("%s\n", cadenaFinal);
     }
-    
-    public static String obtenerNombre(){
+
+    public static String obtenerNombre() {
         return "Luis";
     }
-    
-    
+
 }
