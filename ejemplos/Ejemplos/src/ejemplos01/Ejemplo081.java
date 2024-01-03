@@ -40,7 +40,7 @@ public class Ejemplo081 {
         String cadena = "";
         for (int i = 1; i <= limite; i++) {
             operacion = tabla * i;
-            
+
             cadena = String.format("%s%d * %d = %d\n", cadena, tabla, i, 
                     operacion);
         }
