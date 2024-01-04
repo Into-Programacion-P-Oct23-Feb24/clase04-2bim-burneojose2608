@@ -38,7 +38,7 @@ public class Ejemplo042 {
         obtenerReporte(arreglo3);
         obtenerReporte(arreglo4);
     }
-    
+    // creamos otro for y otra funcion para asi poder sumar los tres tablas y hacer la cuarta y tambiuen creamos un nuevo arreglopara poder ahi podner la suma
     public static void obtenerReporte(int[][] arreglo1){
         String cadena = "";
         for (int i = 0; i < arreglo1.length; i++) {
